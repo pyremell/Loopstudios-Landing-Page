@@ -18,15 +18,31 @@
   // Desktop Styles
   nav {
     position: relative;
+
+    @include breakpoint-down (small) {
+      .hide-for-mobile { // hides links on phones and small devices
+        display: none;
+      }
+    }
+
+    @include breakpoint-up (medium) {
+      .hide-for-desktop { // hides hamburger menu on tablet size and above
+        display: none;
+      }
+    }
+
+    &__links {
+
+    }
   }
 
-  // Mobile Styles
+  // Mobile Styles 
 
   // Hamburger Menu
   &.open { // Hamburger Open Styles
     .header__toggle {
       > span:first-child {
-        transform: rotate (45deg);
+        transform: rotate(45deg);
       }
 
       > span:nth-child(2) {
@@ -53,11 +69,7 @@
       }
     }
   }
-
-  .hide-for-mobile {
-    display: none;
-  }
-
+  
   &__logo {
 
     img {
