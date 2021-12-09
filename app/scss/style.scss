@@ -1,5 +1,6 @@
 @import "variables"; // importing variables first allows the other scss files to use them
 @import "globals";
 @import "mixins"; // Breakpoints live here
+@import "animations";
 
 @import "header";
