@@ -80,9 +80,9 @@ a, a:visited, a:hover {
 
 .container--pall {
   padding-top: 3.125rem;
-  padding-right: 1.875rem;
+  padding-right: 1.375rem;
   padding-bottom: 3.125rem;
-  padding-left: 1.875rem;
+  padding-left: 1.375rem;
 }
 
 .has-fade {
@@ -165,7 +165,7 @@ a, a:visited, a:hover {
 
 .header__hero {
   position: relative;
-  height: 51.8125rem;
+  height: 40.625rem;
   width: 100%;
   background-image: url("/images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
@@ -174,9 +174,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 75em) {
   .header__hero {
-    height: 40.625rem;
     background-image: url("/images/desktop/image-hero.jpg");
-    background-size: contain;
   }
 }
 
@@ -263,17 +261,19 @@ a, a:visited, a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 200;
   line-height: 1rem;
-  padding-left: 2.375rem;
+  padding-left: 1.625rem;
 }
 
 .header__menu a:first-child {
-  margin-top: 17.125rem;
+  margin-top: 13.4375rem;
 }
 
 .header__menu a:not(:first-child) {
-  margin-top: 2.375rem;
+  margin-top: 1.875rem;
 }
 
 .header__logo {
@@ -285,8 +285,8 @@ a, a:visited, a:hover {
 .header__logo img {
   display: block;
   position: relative;
-  width: 185px;
-  height: 32px;
+  width: 146px;
+  height: 24px;
   z-index: 1;
 }
 
@@ -301,15 +301,15 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 9.75rem 1.75rem;
-  padding: 2rem;
+  margin: 6.375rem 1.75rem;
+  padding: 1.625rem;
   border: 2px solid white;
 }
 
 .header__slogan > span {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 3.2125em;
-  font-weight: 200;
+  font-size: 2.4375rem;
+  font-weight: 100;
   color: white;
 }
 
@@ -334,5 +334,17 @@ a, a:visited, a:hover {
     font-size: 4.6rem;
     font-weight: 300;
   }
+}
+
+.main {
+  background-color: white;
+  margin: 0;
+  padding-top: 0;
+}
+
+.main__img {
+  width: 100%;
+  margin-top: 6rem;
+  padding-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
